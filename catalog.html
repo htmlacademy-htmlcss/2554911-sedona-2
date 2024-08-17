@@ -4,10 +4,11 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
 
   <body>
-    <header class="page-header">
+    <header class=" page page-header">
       <a class="page-logo" href="index.html" aria-current="page">
         <img class="page-logo-img" src="images/logo-sedona.svg" width="140" height="70" alt="Логотип сайта Седона">
       </a>
@@ -36,12 +37,12 @@
             </a>
           </li>
           <li class="nav-user-item">
-            <a class="button secondary-button" href="#">Хочу сюда</a>
+            <a class="button secondary-button header-button" href="#">Хочу сюда</a>
           </li>
         </ul>
       </nav>
     </header>
-    <main class="main-inner">
+    <main class="page main-inner">
       <div class="inner-header">
         <h1 class="header-title">Гостиницы Седоны</h1>
         <ul class="breadcrumbs">
@@ -73,8 +74,8 @@
                   </label>
                 </li>
                 <li>
-                  <label class="control" for="Wi-Fi">
-                    <input class="control-input" type="checkbox" name="wi-fi" id="Wi-Fi">
+                  <label class="control" for="wi-fi">
+                    <input class="control-input" type="checkbox" name="wi-fi" id="wi-fi">
                     Wi-Fi
                   </label>
                 </li>
@@ -109,31 +110,33 @@
               <legend class="catalog-filter-title">
                 Стоимость,₽:
               </legend>
-              <label class="control" for="from">От</label>
-              <input class="control-input" type="number" name="from" id="from" placeholder="0">
-              <label class="control" for="to">До</label>
-              <input class="control-input" type="number" name="to" id="to" placeholder="9000">
+              <label class="control-prise" for="from">От</label>
+              <input class="control-input-prise" type="number" name="from" id="from" placeholder="0">
+              <label class="control-prise" for="to">До</label>
+              <input class="control-input-prise" type="number" name="to" id="to" placeholder="9000">
             </fieldset>
-            <button class="button primary-button" type="submit">Применить</button>
+            <button class="button primary-button filter-button" type="submit">Применить</button>
             <button class="button reset-button" type="reset">Сбросить</button>
           </form>
         </section>
       </div>
-      <h2 class="catalog">Найдено гостиниц: <span>38</span> </h2>
-      <select class="select-control" aria-label="Сортировка">
-        <option value="cheap">Сначала дешевые</option>
-        <option value="popular">Сначала популярные</option>
-        <option value="expensive">Сначала дорогие</option>
-      </select>
-      <a href="#" class="button view-button-selected">
-        <span class="visually-hidden">Показать карточки</span>
-      </a>
-      <a href="#" class="button view-button">
-        <span class="visually-hidden">Показать по одному</span>
-      </a>
-      <a href="#" class="button view-button">
-        <span class="visually-hidden">Показать список</span>
-      </a>
+      <div>
+        <h2 class="catalog">Найдено гостиниц: <span>38</span> </h2>
+        <select class="select-control" aria-label="Сортировка">
+          <option value="cheap">Сначала дешевые</option>
+          <option value="popular">Сначала популярные</option>
+          <option value="expensive">Сначала дорогие</option>
+        </select>
+        <a href="#" class="view-button-selected">
+          <span class="visually-hidden">Показать карточки</span>
+        </a>
+        <a href="#" class="view-button">
+          <span class="visually-hidden">Показать по одному</span>
+        </a>
+        <a href="#" class="view-button">
+          <span class="visually-hidden">Показать список</span>
+        </a>
+      </div>
       <section class="filtred-catalog">
         <ul class="filtred-catalog-list">
           <li class="filtred-catalog-item">
@@ -144,9 +147,9 @@
               <h3 class="catalog-card-title">Amara Resort & Spa</h3>
             </a>
             <p class="card-description">Гостиница</p>
-            <p class="card-prise">От 4000</p>
-            <a class="button secondary-button" href="#">Подробнее</a>
-            <button class=" button primary-button">В избранное</button>
+            <p class="card-prise">От 4000 ₽</p>
+            <a class="button secondary-button card-button" href="#">Подробнее</a>
+            <button class=" button primary-button card-button">В избранное</button>
             <p class="stars four-stars">
               <span class="visually-hidden">Отель 4 звезды</span>
             </p>
@@ -162,9 +165,9 @@
               <h3 class="catalog-card-title">Villas at Poco Diablo</h3>
             </a>
             <p class="card-description">Гостиница</p>
-            <p class="card-prise">От 5000</p>
-            <a class="button secondary-button" href="#">Подробнее</a>
-            <button class=" button likes-button">В избранном</button>
+            <p class="card-prise">От 5000 ₽</p>
+            <a class="button secondary-button card-button" href="#">Подробнее</a>
+            <button class=" button likes-button card-button">В избранном</button>
             <p class="stars four-stars">
               <span class="visually-hidden">Отель 4 звезды</span>
             </p>
@@ -180,9 +183,9 @@
               <h3 class="catalog-card-title">Desert Quail Inn</h3>
             </a>
             <p class="card-description">Гостиница</p>
-            <p class="card-prise">От 2600</p>
-            <a class="button secondary-button" href="#">Подробнее</a>
-            <button class="button primary-button">В избранное</button>
+            <p class="card-prise">От 2600 ₽</p>
+            <a class="button secondary-button card-button" href="#">Подробнее</a>
+            <button class="button primary-button card-button">В избранное</button>
             <p class="stars three-stars">
               <span class="visually-hidden">Отель 3 звезды</span>
             </p>
@@ -198,9 +201,9 @@
               <h3 class="catalog-card-title">GreenTree Inn</h3>
             </a>
             <p class="card-description">Гостиница</p>
-            <p class="card-prise">От 1500</p>
-            <a class="button secondary-button" href="#">Подробнее</a>
-            <button class="button primary-button">В избранное</button>
+            <p class="card-prise">От 1500 ₽</p>
+            <a class="button secondary-button card-button" href="#">Подробнее</a>
+            <button class="button primary-button card-button">В избранное</button>
             <p class="stars two-stars">
               <span class="visually-hidden">Отель 2 звезды</span>
             </p>
@@ -221,7 +224,7 @@
           <a class="button pagination-button" href="#"> 3 </a>
         </li>
         <li class="pagination-item">
-          <a class="pbutton pagination-button" href="#"> 4 </a>
+          <a class="button pagination-button" href="#"> 4 </a>
         </li>
         <li class="pagination-item">
           <span>...</span>
@@ -231,29 +234,29 @@
         </li>
       </ul>
       <section class="subscribe">
-        <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
-        <p class="subscribe-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <h2 class="lead text-light">Подпишитесь на рассылку</h2>
+        <p class="lead-text text-light">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
           <label class="visually-hidden" for="subscribe-email">Введите ваш email</label>
-          <input type="email" id="subscribe-email" name="user-email" placeholder="Ваш e-mail">
+          <input class="text-input" type="email" id="subscribe-email" name="user-email" placeholder="Ваш e-mail">
           <button class="button primary-button" type="submit">Подписаться</button>
         </form>
       </section>
     </main>
-    <footer class="page-footer">
+    <footer class="page page-footer">
       <section class="social">
         <h2 class="visually-hidden">Соцсети</h2>
         <ul class="social-list">
           <li class="social-item">
-            <a class="button" href="https://vk.com/htmlacademy">
+            <a href="https://vk.com/htmlacademy">
               <span class="visually-hidden">ВКонтакте</span></a>
           </li>
           <li class="social-item">
-            <a class="button" href="https://t.me/htmlacademy ">
+            <a href="https://t.me/htmlacademy ">
               <span class="visually-hidden">Телеграм</span></a>
           </li>
           <li class="social-item">
-            <a class="button" href="https://www.youtube.com/user/htmlacademyru">
+            <a href="https://www.youtube.com/user/htmlacademyru">
               <span class="visually-hidden">Ютуб</span></a>
           </li>
         </ul>
