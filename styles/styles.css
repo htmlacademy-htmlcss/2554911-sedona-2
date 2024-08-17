@@ -24,7 +24,7 @@ body {
 }
 
 .page {
-  background: #ffffff;
+  background-color: #ffffff;
 }
 
 .nav-link {
@@ -55,7 +55,7 @@ body {
   color: #ffffff;
   background-color: #7db54f;
   border-radius: 50%;
-  padding: 5px;
+  padding: 5px 5px 5px 4px;
 }
 
 .button {
@@ -101,6 +101,7 @@ body {
   font-size: 20px;
   line-height: 36px;
   border-radius: 0 4px 4px 0;
+  border-style: none;
   padding: 8px 50px;
   width: 232px;
   height: 52px;
@@ -199,6 +200,10 @@ body {
   background-repeat: no-repeat;
 }
 
+.subscribe-catalog{
+  text-align: center;
+}
+
 .text-input {
   font-family: inherit;
   color: #000000;
@@ -275,6 +280,7 @@ body {
   font-size: 18px;
   line-height: 21px;
   color: #333333;
+  background-color: #ffffff;
   border-radius: 4px;
   padding: 14px 20px;
   width: 292px;
