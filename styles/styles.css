@@ -94,7 +94,7 @@ body {
   text-decoration: none;
   text-transform: capitalize;
   display: block;
-  padding: 20px 16px 0 16px;
+  padding: 20px 16px 20px 16px;
   max-width: 150px;
 }
 
@@ -103,11 +103,16 @@ body {
 }
 
 .nav-link:focus {
-  color: #615048
+  color: #615048;
+  z-index: 1;
 }
 
 .nav-link:active {
   color: #756257
+}
+
+.nav-link-current{
+  padding-bottom: 0;
 }
 
 .nav-link-current[aria-current="page"]::after {
@@ -163,6 +168,7 @@ body {
 
 .nav-user-item:not(:last-child):focus {
   opacity: 70%;
+  z-index: 1;
 }
 
 .nav-user-item:not(:last-child):active {
@@ -223,6 +229,7 @@ body {
 
 .primary-button:focus {
   background-color: #68a2ca;
+  z-index: 1;
 }
 
 .primary-button:active {
@@ -246,6 +253,7 @@ body {
 
 .likes-button:focus {
   background-color: #6c9e42;
+  z-index: 1;
 }
 
 .likes-button:active {
@@ -269,6 +277,7 @@ body {
 
 .secondary-button:focus {
   background-color: #615048;
+  z-index: 1;
 }
 
 .secondary-button:active {
@@ -322,6 +331,7 @@ body {
 
 .reset-button:focus {
   color: rgba(255, 255, 255, 0.6);
+  z-index: 1;
 }
 
 .reset-button:active {
@@ -666,6 +676,7 @@ body {
 
 .social-link:focus::before {
  background-color: #68a2ca;
+ z-index: 1;
 }
 
 .social-link:active::before {
@@ -693,6 +704,7 @@ body {
 
 .contacts-address-phone:focus {
   color: #756157;
+  z-index: 1;
 }
 
 .contacts-address-phone:active {
@@ -713,6 +725,7 @@ body {
 
 .dev-logo-link:focus {
   color: #756157;
+  z-index: 1;
 }
 
 .dev-logo-link:active {
@@ -808,14 +821,15 @@ body {
 
 .catalog-filter {
   display: flex;
-  justify-content: space-between;
+  gap: 70px;
 }
 
 .control {
   cursor: pointer;
 }
 
-.control:hover {
+.control:hover,
+.control:active {
   opacity: 60%;
 }
 
@@ -826,14 +840,13 @@ body {
 
 .control-input {
   padding: 0;
-  font-size: 18px;
-  line-height: 23px;
-  font-weight: 400;
   margin: 0;
   margin-right: 12px;
   cursor: pointer;
   appearance: none;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   vertical-align: middle;
   width: 20px;
   height: 20px;
@@ -863,14 +876,12 @@ body {
 
 .control-input[type="radio"]:checked::before {
   content: "";
-  position: absolute;
   display: block;
-  width: 20px;
-  height: 20px;
-  background-image: url(../images/icons/radio-checked.svg);
-  background-position: center;
-  background-repeat: no-repeat;
-  text-align: center;
+  width: 10px;
+  height: 10px;
+  background-color: #3f5e72;
+  border-radius: 50%;
+
 }
 
 .control-input-filter {
@@ -879,6 +890,7 @@ body {
   width: 410px;
   display: flex;
   flex-wrap: wrap;
+  gap: 70px;
 }
 
 .catalog-filter-group {
@@ -889,11 +901,6 @@ body {
   border-style: none;
   box-sizing: border-box;
 }
-
-.catalog-filter-group:nth-child(odd){
-  margin-right: 70px;
-}
-
 
 .catalog-filter-title {
   display: block;
@@ -924,7 +931,7 @@ body {
 
 .price-container {
   margin: 0;
-  margin-inline: 100px 70px;
+  margin-left: auto;
   padding: 0;
   border-style: none;
 }
@@ -995,6 +1002,7 @@ body {
 .input-prise :hover,
 .input-prise:focus {
   background: #e6e6e6;
+  z-index: 1;
 }
 
 
@@ -1025,10 +1033,14 @@ body {
 }
 
 .range-toggle:hover {
-box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);}
+box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
+}
 
 .range-toggle:focus{
-box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);}
+box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
+z-index: 1;
+}
+
 
 .range-toggle:active{
   border: 2px solid #83b3d3;
@@ -1164,6 +1176,7 @@ box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);}
 .card-img:hover,
 .card-img:focus {
   opacity: 90%;
+  z-index: 1;
 }
 
 .card-img:active {
@@ -1194,6 +1207,7 @@ box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);}
 .card-link-title:hover,
 .card-link-title:focus {
   color: #615048;
+  z-index: 1;
 }
 
 .card-link-title:active {
@@ -1284,6 +1298,7 @@ box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);}
   color: #000000;
   background-color: #f2f2f2;
   pointer-events: none;
+  z-index: 1;
 }
 
 
@@ -1306,7 +1321,7 @@ box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);}
   height: 100%;
   background-color: rgba(242, 242, 242, 0.8);
   display: flex;
-  padding: 50px;
+  padding-top: 30px;
   z-index: 2;
 }
 
@@ -1369,6 +1384,7 @@ box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);}
 .modal-close-button:hover,
 .modal-close-button :focus{
 background-color: #e6e6e6;
+z-index: 1;
 }
 
 .modal-close-button:active{
@@ -1405,11 +1421,6 @@ background-color: #e6e6e6;
 
 }
 
-.form-label-icon{
-  position: relative;
-  padding-right: 16px;
-}
-
 .field {
 
   background-color: #f2f2f2;
@@ -1433,7 +1444,20 @@ background-color: #e6e6e6;
   background-position-x: 390px;
   background-position-y: 16px;
   background-color: #f2f2f2;
+}
 
+.field-date:hover,
+.field-date:focus {
+background-color: #e6e6e6;
+}
+
+.field-date:active{
+  background-color: #f2f2f2;
+}
+
+.field-date:disabled{
+  opacity: 50%;
+pointer-events: none;
 }
 
 .comment {
@@ -1455,12 +1479,11 @@ background-color: #e6e6e6;
 
 .lable-kids {
   grid-column: 3 / 4;
-  margin-left: 45px;
+  margin-left: 55px;
 }
 
 .tooltip{
   position: absolute;
-  margin-left: 10px;
   width: 26px;
   height: 26px;
   border-radius: 50%;
@@ -1517,6 +1540,7 @@ display: none
 .tooltip-button:hover + .tooltip-text,
 .tooltip-button:focus + .tooltip-text {
   display: block;
+  z-index: 1;
 }
 
 .input-kids-container {
@@ -1534,12 +1558,13 @@ display: none
   border-radius: 4px;
 }
   .field-number{
-    width: 35px;
+    width: 25px;
+    margin-inline: 1px;
     padding: 12px 6px;
     text-align: center;
     flex-grow: 1;
     flex-shrink: 0;
-
+box-sizing: border-box;
 }
 
 input::-webkit-outer-spin-button,
@@ -1556,20 +1581,10 @@ input::-webkit-inner-spin-button {
     background-color: transparent;
     cursor: pointer;
     box-sizing: border-box;
-
-}
-
-.number-button {
-  display: flex;
-    justify-content: center;
-    align-items: center;
     width: 20px;
-    height: 20px;
+    height: 40px;
     padding: 0;
-    border: none;
-    border-radius: 4px;
-    background-color: #f2f2f2;
-    cursor: pointer;
+
 }
 
  .number-button-minus::before{
@@ -1589,6 +1604,7 @@ input::-webkit-inner-spin-button {
 
 .number-button-minus:focus::before{
   background-color: #000000;
+  z-index: 1;
 }
 
 .number-button-minus:active::before{
@@ -1617,6 +1633,7 @@ background-color: rgba(117, 97, 87, 0.3);}
 
 .number-button-plus:focus::before{
   background-color: #000000;
+  z-index: 1;
 }
 
 .number-button-plus:active::before{
