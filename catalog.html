@@ -2,10 +2,13 @@
 <html lang="ru">
 
   <head>
+
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="icon" href="images/icons/favicon.ico">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
   </head>
 
   <body>
@@ -152,28 +155,30 @@
               <option value="popular">Сначала популярные</option>
               <option value="expensive">Сначала дорогие</option>
             </select>
-            <a href="#" class="card-grid-toogle card-grid-toogle-selected">
-              <span class="visually-hidden">Показать карточки</span>
-              <svg width="16" height="14" viewBox="0 0 16 14" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                <path d="M4 0H0v6h4V0ZM16 0h-4v6h4V0ZM10 0H6v6h4V0ZM4 8H0v6h4V8ZM16 8h-4v6h4V8ZM10 8H6v6h4V8Z" />
-              </svg>
-            </a>
-            <a href="#" class="card-grid-toogle">
-              <span class="visually-hidden">Показать по одному</span>
-              <svg width="16" height="14" viewBox="0 0 16 14" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                <path d="M16 12H0v2h16v-2ZM14 2v6H2V2h12Zm2-2H0v10h16V0Z" />
-              </svg>
-            </a>
-            <a href="#" class="card-grid-toogle">
-              <span class="visually-hidden">Показать список</span>
-              <svg width="16" height="14" viewBox="0 0 16 14" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M2 0H0v2h2V0ZM16 0H4v2h12V0ZM2 4H0v2h2V4ZM16 4H4v2h12V4ZM2 8H0v2h2V8ZM16 8H4v2h12V8ZM2 12H0v2h2v-2ZM16 12H4v2h12v-2Z" />
-              </svg>
-            </a>
+            <div class="card-grid">
+              <a href="#" class="card-grid-toogle card-grid-toogle-selected">
+                <span class="visually-hidden">Показать карточки</span>
+                <svg width="16" height="14" viewBox="0 0 16 14" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M4 0H0v6h4V0ZM16 0h-4v6h4V0ZM10 0H6v6h4V0ZM4 8H0v6h4V8ZM16 8h-4v6h4V8ZM10 8H6v6h4V8Z" />
+                </svg>
+              </a>
+              <a href="#" class="card-grid-toogle">
+                <span class="visually-hidden">Показать по одному</span>
+                <svg width="16" height="14" viewBox="0 0 16 14" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16 12H0v2h16v-2ZM14 2v6H2V2h12Zm2-2H0v10h16V0Z" />
+                </svg>
+              </a>
+              <a href="#" class="card-grid-toogle">
+                <span class="visually-hidden">Показать список</span>
+                <svg width="16" height="14" viewBox="0 0 16 14" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M2 0H0v2h2V0ZM16 0H4v2h12V0ZM2 4H0v2h2V4ZM16 4H4v2h12V4ZM2 8H0v2h2V8ZM16 8H4v2h12V8ZM2 12H0v2h2v-2ZM16 12H4v2h12v-2Z" />
+                </svg>
+              </a>
+            </div>
           </div>
-          <ul class="filtred-catalog-list">
-            <li class="filtred-catalog-item">
+          <ul class="filtered-catalog-list">
+            <li class="filtered-catalog-item">
               <a class="card-link-img" href="#" tabindex="-1">
                 <img class="card-img" src="images/hotels/amara-resort-&-spa.jpg" width="300" height="212"
                   alt="Вид на звездное небо между скал"></a>
@@ -191,7 +196,7 @@
                 <span>8,5</span>
               </p>
             </li>
-            <li class="filtred-catalog-item">
+            <li class="filtered-catalog-item">
               <a class="card-link-img" href="#" tabindex="-1">
                 <img class="card-img" src="images/hotels/villas-at-poco-diablo.jpg" width="300" height="212"
                   alt="Вид на горы на фоне радужного неба"></a>
@@ -209,7 +214,7 @@
                 <span>9,2</span>
               </p>
             </li>
-            <li class="filtred-catalog-item">
+            <li class="filtered-catalog-item">
               <a class="card-link-img" href="#" tabindex="-1">
                 <img class="card-img" src="images/hotels/desert-quail-inn.jpg" width="300" height="212"
                   alt="Вид на горы окруженные лесом"></a>
@@ -227,7 +232,7 @@
                 <span>6,9</span>
               </p>
             </li>
-            <li class="filtred-catalog-item">
+            <li class="filtered-catalog-item">
               <a class="card-link-img" href="#" tabindex="-1">
                 <img class="card-img" src="images/hotels/greentree-inn.jpg" width="300" height="212"
                   alt="Вид на горы на фоне звездного неба"></a>
