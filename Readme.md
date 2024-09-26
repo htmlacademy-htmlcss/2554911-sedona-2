@@ -1,7 +1,8 @@
 # Личный проект «Седона»
 
 * Студент: [Дарин Мимех](https://up.htmlacademy.ru/htmlcss-individual/2/user/2554911).
-* Наставник: `Неизвестно`.
+* Наставник: [Анна Лисененкова](https://htmlacademy.ru/profile/ankhena).
+* Сайт: [Мой проект Седона](https://darin-00.github.io/2554911-sedona-2/).
 
 ---
 
